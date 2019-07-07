@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Extension for After Effects</title>
-	<link rel="stylesheet" href="css/main.css">
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-
-	<input type="text" id="URL" placeholder="Введите ссылку на JSON:">
-
-	<input type="text" id="INTERVAL" placeholder="Введите интервал в миллисекундах:">
-
-	<textarea id="LOG" cols="30" rows="10" placeholder="Здесь будут записаны изменения JSON файла"></textarea>
-
-	<button type="submit" id="BUTTON" checked="false">Watch</button>
-
-	<script>
-	
+function compareobj() {	
 		const url = document.querySelector('#URL');
 		const interval = document.querySelector('#INTERVAL');
 		let log = document.querySelector('#LOG');
@@ -62,7 +43,4 @@ let set = new Set();
 		}
 		button_click++;
 		});	
-
-	</script>
-</body>
-</html>
+}
